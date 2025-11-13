@@ -106,6 +106,7 @@ const ROWS = [
         "Algorithms",
         "Programming Paradigms",
         "Database Management",
+        "Generative AI"
       ],
     },
     {

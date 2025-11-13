@@ -187,7 +187,7 @@ export default function Resume() {
               <strong>10th Board — Senior ShreeRam Model High School</strong>{" "}
               (CBSE Board, 2016)
               <br />
-              <span style={{ color: "#aaa" }}>Percentage: 72%</span>
+              <span style={{ color: "#aaa" }}>Percentage: 72.52%</span>
             </li>
           </ul>
         </motion.div>

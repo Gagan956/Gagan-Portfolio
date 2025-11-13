@@ -241,7 +241,7 @@ const AboutMe = () => {
                   HR
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>
-                  CBSE Board | Percentage: 72%
+                  CBSE Board | Percentage: 72.52%
                 </p>
                 <p style={{ color: "rgba(255,255,255,0.7)" }}>
                   Completed in 2016
