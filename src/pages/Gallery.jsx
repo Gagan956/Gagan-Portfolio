@@ -1,24 +1,24 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
-import "../CSS/Gap.css";
+import "../CSS/Gallery.css";
 
 const IMAGES = {
   personal: [
     {
       id: 1,
-      caption: "Lost in the beauty of the misty forest 🌲🌫️",
-      photos: ["/gallery/", "/gallery/"],
+      caption: "I worked as an intern.🌫️",
+      photos: ["/gallery/nyouta-1.png", "/gallery/nyouta-2.png","/gallery/epitome-1.png", "/gallery/epitome-2.png", "/gallery/epitome-3.png",  "/gallery/mail.png"],
     },
     {
       id: 2,
       caption:
-        "It’s designed to capture memories, connect people through visuals, and inspire creativity beyond the screen.",
-      photos: ["/gallery/", "/gallery/"],
+        "It’s Hope for every Human being to come out of the darkness and light, .",
+      photos: ["/gallery/line.jpg", "/gallery/"],
     },
   ],
   projects: [
-    { 
+    {  
       id: 1,
       caption:
         "MediMeet — A web app for booking doctor appointments and managing consultations easily from anywhere.",
@@ -30,18 +30,6 @@ const IMAGES = {
       caption:
         "It’s designed to capture memories, connect people through visuals, and inspire creativity beyond the screen.",
       photos: ["/gallery/m1.png", "/gallery/m2.png","/gallery/m3.png", "/gallery/m4.png"],
-    },
-  ],
-  achievements: [
-    {
-      id: 1,
-      caption: "Solved 1000 LeetCode questions 🏆!",
-      photos: ["/gallery/"],
-    },
-    {
-      id: 2,
-      caption: "Technical Lead at SCET AI Club 🤖",
-      photos: ["/gallery/"],
     },
   ],
 };
@@ -78,7 +66,7 @@ const tabContentVariants = {
   exit: { opacity: 0, y: -30, scale: 0.98, transition: { duration: 0.4 } },
 };
 
-export default function Gap() {
+export default function Gallery() {
   const [tab, setTab] = useState("personal");
   const [zoom, setZoom] = useState({ img: null, post: null, index: 0 });
 
@@ -115,7 +103,7 @@ export default function Gap() {
 
       {/* 🧭 Tabs */}
       <motion.div className="tab-buttons" variants={childVariants}>
-        {["personal", "projects", "achievements"].map((type) => (
+        {["personal", "projects"].map((type) => (
           <motion.button
             key={type}
             className={`tab ${tab === type ? "active" : ""}`}
